@@ -3,51 +3,87 @@
  * NE PAS TOUCHER AUX LIGNES CI-DESSOUS
  * TRAVAILLEZ A PARTIR DE LA LIGNE 27 !!
  ************************************************************/
-.page{
+.page {
     width: 900px;
-    margin:auto;
+    margin: auto;
 }
-.entete{
+
+.entete {
     height: 100px;
 }
-.colonne_menu{
-    float:left;
-    width:200px;
-    height:100%;
+
+.colonne_menu {
+    float: left;
+    width: 200px;
+    height: 100%;
 }
+
 .colonne_contenu {
-    margin-left:200px;
+    margin-left: 200px;
 }
-.pieddepage{
-    height:50px;
+
+.pieddepage {
+    height: 50px;
 }
 
 /************************************************************
  * SAISISSEZ VOS DECLARATIONS CSS EN-DESSOUS DE CETTE LIGNE
  ************************************************************/
-body{
-	/* Pour avoir le choix des couleurs https://htmlcolorcodes.com/fr/noms-de-couleur/ */
-    background-color: mediumpurple; 
+body {
+    /* Pour avoir le choix des couleurs https://htmlcolorcodes.com/fr/noms-de-couleur/ */
+    /* CSS : En utilisant le sélecteur body,
+modifiez la couleur d’arrière-plan de la page ainsi que les paramètres
+de police utilisés par défaut pour l’ensemble de la page HTML. */
+
+    /*     Modifiez la couleur d’arrière-plan :
+    Propriété : background-color,
+    Exemples de valeur : yellow, red, etc,*/
+    background-color: yellow;
+    /*Modifiez la taille de police :
+    Propriété : font-size,
+    Exemples de valeur : 0.8rem, 12px, etc,
+    Modifiez la police de caractère :
+    Propriété : font-family,
+    Exemples de valeur : arial, verdana, etc, */
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+    /*     CSS : Toujours avec le même sélecteur, réglez les
+    marges externes et internes du document à 0 afin que le contenu soit
+    collé au bord supérieur de la fenêtre.
+    Modifiez les marges  :
+    Propriété : margin,
+    Modifiez les marges  :
+    Propriété : padding, */
+
+    padding: 0px;
+    margin: 0px;
 }
-.page {
-	background-color: red; 
+
+/*     CSS : Supprimez la couleur d’arrière-plan appliquée à l’élément qui utilise la classe page */
+.page {}
+
+.entete {
+    /*     CSS : En utilisant le sélecteur .entete :
+              Ajoutez une marge intérieur de 10px ;
+              Modifiez la couleur d’arrière-plan de la zone d’en-tête. */
+    padding: 10px;
+    background-color: aqua;
 }
-.entete{
-    background-color: hotpink;
-}
+
 .colonnes {
     background-color: deepskyblue;
 }
-.colonne_menu{
+
+.colonne_menu {
     background-color: gold;
 }
+
 .colonne_contenu {
     background-color: lightgreen;
 }
-.pieddepage{
+
+.pieddepage {
     background-color: lightgray;
 }
-
-
-
-
