@@ -72,6 +72,26 @@ de police utilisés par défaut pour l’ensemble de la page HTML. */
     background-color: aqua;
 }
 
+/* CSS : Grâce aux classes que vous venez d’ajouter, personnalisez les deux éléments identifiés précédemment :
+     Modifiez la taille des caractères ;
+     Modifiez la couleur du texte :
+Propriété : color,
+Exemples de valeur : yellow, purple, gold ; */
+
+.title {
+    color: coral;
+    font-size: 4rem;
+}
+
+.slogan {
+    color: indigo;
+    font-size: 1rem;
+    /* CSS : Modifiez le slogan du site afin qu’il soit en italique :
+    Modifier le style des caractère pour les passer en italique :
+    Propriété : font-style, */
+    font-style: italic;
+}
+
 .colonnes {
     background-color: deepskyblue;
 }
