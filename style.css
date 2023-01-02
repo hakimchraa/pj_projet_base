@@ -105,5 +105,14 @@ Exemples de valeur : yellow, purple, gold ; */
 }
 
 .pieddepage {
-    background-color: lightgray;
+    /* . Mise en forme du pied de page
+
+    CSS : En utilisant le sélecteur .pieddepage, personnalisez le pied de page :
+        Modifiez la couleur d’arrière-plan ;
+        Modifiez la couleur du texte ;
+        Centrez le texte :
+    Propriété : text-align, */
+    background-color:brown;
+    color: gold;
+    text-align: center;
 }
