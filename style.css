@@ -100,12 +100,79 @@ Exemples de valeur : yellow, purple, gold ; */
     background-color: gold;
 }
 
+
+/*      CSS : Afin de donner l’impression que la zone menu fait toute la hauteur de la page, 
+        modifiez la couleur d’arrière-plan de .colonnes 
+        et de .colonne_menu pour qu’ils aient la même.Vous pouvez utiliser le sélecteur .colonnes, .colonne_menu. */
+
+.colonnes,
+.colonne_menu {
+    background-color: deepskyblue;
+
+}
+
 .colonne_contenu {
     /*     CSS : En utilisant le sélecteur .colonne_contenu :
         Modifiez la couleur d’arrière-plan de la zone ;
         Ajoutez une marge d’au moins 10px à la zone. */
     background-color: rgb(123, 47, 115);
-    margin: 10px;
+    padding: 10px;
+}
+
+.colonne_menu ul {
+
+    /* CSS : En utilisant le sélecteur .colonne_menu ul (ce qui correspond aux éléments ul
+    ayant un parent avec la classe .colonne_menu), supprimez les marges internes ET externes de la liste à puces. */
+    margin: 0px;
+    padding: 0px;
+}
+
+.colonne_menu li {
+    /*     CSS : En utilisant le sélecteur .colonne_menu li (ce qui correspond aux éléments li ayant un parent avec 
+    la classe .colonne_menu) :        Supprimez les puces de la liste :    Propriété : list-style-type,
+    https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type. */
+
+    list-style-type: none;
+
+    /* CSS : En utilisant le sélecteur .colonne_menu li, continuez à personnalisez les lignes de la liste :
+       Ajoutez une couleur d’arrière-plan ;
+       Ajoutez une marge intérieure ET une marge extérieure de 5px ;
+       Centrez le texte.
+       */
+
+    background-color: darkgreen;
+    margin: 5px;
+    /* padding: 5px; */
+    text-align: center;
+
+}
+
+/*  En utilisant le sélecteur adapté, ajoutez un
+       effet de survol aux lignes de la liste en définissant une couleur
+       d’arrière-plan différente lors du survol */
+.colonne_menu li:hover {
+    background-color: chartreuse;
+}
+
+.colonne_menu a {
+    /*     CSS : En utilisant le sélecteur adapté,
+        personnalisez les liens du menu. Les autres liens (dans le contenu) ne
+        doivent pas être impactés :
+        Supprimez le soulignement ;
+        Modifiez la couleur. */
+    text-decoration: none;
+    color: darkorange;
+    /*  Remarque: Vous aurez peut-être remarqué un petit détail…
+        Les liens du menu ne fonctionnent que lorsque l’on survole le texte du
+        lien mais pas lorsque l’on survole le rectangle correspondant à la ligne
+        de la liste. Ce comportement est tout à fait normal, mais ce n’est pas
+        très ergonomique. */
+    display: block;
+    /*  Pour corriger le problème ajoutez la propriété display: block;
+        pour les liens du menu, ajoutez une marge interne de 5px aux liens et
+        supprimez la marge interne que nous avons mis précédemment sur les
+        lignes de la liste avec .colonne_menu li. */
+    padding: 5px;
 }
 
 .pieddepage {
