@@ -101,7 +101,11 @@ Exemples de valeur : yellow, purple, gold ; */
 }
 
 .colonne_contenu {
-    background-color: lightgreen;
+    /*     CSS : En utilisant le sélecteur .colonne_contenu :
+        Modifiez la couleur d’arrière-plan de la zone ;
+        Ajoutez une marge d’au moins 10px à la zone. */
+    background-color: rgb(123, 47, 115);
+    margin: 10px;
 }
 
 .pieddepage {
@@ -112,7 +116,79 @@ Exemples de valeur : yellow, purple, gold ; */
         Modifiez la couleur du texte ;
         Centrez le texte :
     Propriété : text-align, */
-    background-color:brown;
+    background-color: brown;
     color: gold;
     text-align: center;
+    /* CSS : Toujours sur le sélecteur .pieddepage, ajoutez la propriété CSS permettant de définir la hauteur de ligne : 
+    line-height. Réglez-la pour que sa valeur soit identique à la hauteur de la zone de pied de page. */
+    line-height: 100%;
+}
+
+h1 {
+    /*     CSS : En utilisant le sélecteur h1, personnalisez les titres de niveau 1 :
+        Modifiez la couleur d’arrière-plan des titres de niveau 1.
+        Ajoutez une marge de 10px ;
+        Ajoutez une marge de 20px : margin-bottom ;
+        Ajoutez en dessous uniquement, une bordure épaisse de 5px, 
+        en trait continu avec la couleur de votre choix : border-bottom: 5px solid purple ; */
+
+    background-color: grey;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid royalblue;
+}
+
+h2 {
+    /* CSS : En utilisant le sélecteur adapté, personnalisez les titres de niveau 2 :
+    Modifiez la couleur du texte ;
+    Modifiez la taille des caractères ;
+    Ajoutez une marge extérieure de 20 pixels tout autour ;
+    Basculez le texte en petites capitales :
+    Propriété : font-variant, */
+    color: chartreuse;
+    font-size: 1.2rem;
+    margin: 20px;
+    font-variant: small-caps;
+}
+
+strong {
+    /* CSS : En utilisant le sélecteur strong, personnalisez l’aspect du texte sur lequel est appliquée une emphase forte :
+    Modifiez la couleur du texte ;
+    Supprimez le gras :
+    Propriété : font-weight, */
+    color: red;
+    font-weight: initial;
+}
+
+em {
+    color: green;
+}
+
+.introduction {
+    /*     CSS : En utilisant le bon sélecteur, modifiez le paragraphe introduction :
+        Mettez le texte en italique ;
+        Ajoutez une bordure tout autour du paragraphe ;
+        Ajoutez une marge de 10px ;
+        Ajoutez la propriété permettant d’arrondir les bords en la réglant à 10px :
+        Propriété : border-radius */
+    font-style: italic;
+    border-style: solid;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+a {
+    /* CSS : Deux liens sont présents dans la page. Avec le sélecteur adapté, ajoutez du gras sur les liens par défaut. */
+    font-weight: bold;
+}
+
+a:hover {
+
+    /* CSS : En utilisant la pseudo-classe :hover :
+    Changez la couleur du texte lors du survol des liens ;
+    Supprimez le soulignement lors du survol des liens :
+    Propriété : text-decoration, */
+    color: darkblue;
+    text-decoration: none;
 }
